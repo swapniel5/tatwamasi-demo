@@ -1,23 +1,23 @@
-# Tatwamasi Studio website
+# Tatwamasi Studio website demo
 
-## Update text and contact details
+This is an owner-pitch concept, not a ready-to-publish studio website. It uses one supplied bedroom project to demonstrate how project photos, visible design details, a homeowner enquiry journey and an Instagram link can work together. The enquiry form is intentionally a non-sending prototype.
 
-- Change the studio name, Instagram URL, city, phone, WhatsApp number, email, address, trust-strip copy and project media in `data/media.js`. A non-empty address displays the Google Maps directions link.
-- Replace `[PHONE]`, `[WHATSAPP]`, `[EMAIL]` and `[CITY]` only with confirmed details. WhatsApp needs the country code followed by the number, with no `+`, spaces or punctuation.
-- Replace the neutral entries in `trust` with studio-approved proof points; publish numbers only when verified.
-- Update the title, general page copy, FAQ and JSON-LD details in `index.html` when the studio confirms the wording and business information.
+## Content that needs owner approval
 
-## Swap the placeholder photo
+- Confirm the project name, location, client brief, scope and project story before adding them to the page.
+- Confirm the studio's service types, service area, consultation process and project-fit requirements before presenting them as facts.
+- Replace the demo contact message only after the preferred enquiry channel (WhatsApp, phone, email or a form service) is confirmed and tested.
+- Confirm permission to publish each project photo, video, testimonial, client name and project location.
+- Replace the text-based wordmark with the approved logo and align colors and typography with the studio's brand.
+- Remove or rewrite the visible pitch-demo notes once the owner has approved the content and the real enquiry route is connected.
 
-Put approved, optimized photos in `assets/img/`. Change `hero.img` and its descriptive `hero.alt` in `data/media.js` to the correct relative path and a concise description of the actual image. The same hero image is used for social sharing; replace the Open Graph and Twitter image paths in `index.html` with an approved 1200×630 image. Update `caseStudy.img` if a separate featured photo is supplied.
+## Project photos and Instagram
 
-## Add a project or video
+- The six photos in `data/media.js` are multiple views of one bedroom project, not six separate projects. Add another project only when there is a distinct approved project story and its own image set.
+- Instagram can help identify suitable projects, room walkthroughs, detail shots and behind-the-scenes material. Ask the studio to select the posts and supply the original media files, project facts, captions and permission to reuse them on the website.
+- Do not assume that public Instagram content is cleared for downloading or republishing. If a post is embedded or linked instead, confirm the studio wants that presentation and remember that the platform controls availability and loading.
+- Keep descriptions in `alt` focused on what is actually visible in each image.
 
-- Add a project object to `projects` in `data/media.js`, with a unique title, actual photo path, descriptive `alt`, and category `living`, `bedroom`, `kitchen` or `commercial`.
-- Add public Instagram post or Reel permalinks to `instagramPosts` in `data/media.js` to show them in the scrolling embeds. Each post must be public and have its own unique link. The motion pauses on hover/focus and is disabled for visitors who prefer reduced motion.
-- Alternatively, add approved MP4 files under `assets/video/` and an image poster under `assets/img/`; add a `reels` object with `title`, `src` and `poster`.
-- Keep paths relative to this folder. Optimize images (preferably under 400 KB) and videos (under 8 MB).
+## Preview and publish
 
-## Publish
-
-Open `index.html` directly to preview or upload this folder to a static host. Replace `SITE_URL` in `robots.txt` and `sitemap.xml` with the actual published origin before deployment. Add the confirmed logo and a PNG Apple touch icon when those brand assets are supplied.
+Open `index.html` directly or use a local static server to preview the page. Before launch, connect the approved contact route, check all links on mobile, replace demo notes, and update `robots.txt` and `sitemap.xml` with the published site URL.
