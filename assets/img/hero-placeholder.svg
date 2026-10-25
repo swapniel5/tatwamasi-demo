@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tatwamasi Studio placeholder hero artwork</title>
+  <desc id="desc">Neutral abstract shapes with a reminder to replace this artwork with an approved studio photograph.</desc>
+  <rect width="1200" height="630" fill="#e9dfd2"/>
+  <path d="M0 470 320 220l240 180 200-230 440 300v160H0Z" fill="#cdbfae"/>
+  <path d="M0 520 360 330l250 150 260-190 330 220v120H0Z" fill="#9a8067"/>
+  <rect x="90" y="80" width="1020" height="470" rx="14" fill="none" stroke="#62401f" stroke-width="3"/>
+  <text x="600" y="292" fill="#2b2622" font-family="Georgia,serif" font-size="48" text-anchor="middle">Tatwamasi Studio</text>
+  <text x="600" y="350" fill="#2b2622" font-family="Arial,sans-serif" font-size="24" text-anchor="middle">TODO: Replace with an approved hero photo</text>
+</svg>

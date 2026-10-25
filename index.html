@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tatwamasi Studio | Interior Design</title>
+  <meta name="description" content="Explore interior design work and get in touch with Tatwamasi Studio.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tatwamasi Studio | Interior Design">
+  <meta property="og:description" content="Explore interior design work and get in touch with Tatwamasi Studio.">
+  <meta property="og:image" content="assets/img/hero.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tatwamasi Studio | Interior Design">
+  <meta name="twitter:description" content="Explore interior design work and get in touch with Tatwamasi Studio.">
+  <meta name="twitter:image" content="assets/img/hero.svg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.svg">
+  <link rel="preload" as="image" href="assets/img/hero.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- TODO: Replace the social image with an absolute URL after deployment. -->
+  <!-- TODO: Replace contact placeholders in data/media.js with confirmed studio details. -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Tatwamasi Studio",
+      "telephone": "[PHONE]",
+      "email": "[EMAIL]",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "[CITY]"
+      }
+    }
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <!-- TODO: Add the approved logo asset here; this visible brand name is the accessible fallback. -->
+  <a class="logo" href="#top" aria-label="Tatwamasi Studio home"><span data-brand>Tatwamasi Studio</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="nav" aria-label="Main">
+    <a href="#about">About</a><a href="#portfolio">Portfolio</a>
+    <a href="#process">Process</a><a href="#contact">Contact</a>
+    <a id="navContactIcon" class="nav-contact-icon" href="#" aria-label="Call or WhatsApp Tatwamasi Studio">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 3.8 9.2 3l2 4.8-1.9 1.4a15 15 0 0 0 5.5 5.5l1.4-1.9 4.8 2-.8 2.6a2 2 0 0 1-2.1 1.4A16.4 16.4 0 0 1 5.2 6a2 2 0 0 1 1.4-2.2Z"/></svg>
+      <span id="navContactLabel">Call / WhatsApp</span>
+    </a>
+    <a class="btn btn-sm" href="#contact">Book a Consultation</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <img id="heroImg" class="hero-img" alt="" width="1200" height="630" fetchpriority="high">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Interior Design Studio</p>
+      <h1>Homes designed around the way you live.</h1>
+      <!-- TODO: Confirm the fixed-price, weekly-update, and on-schedule claims with the client before publishing. -->
+      <p>Fixed-price quotes. Weekly site updates. Handover on schedule.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Book a Consultation</a>
+        <a class="btn btn-ghost" href="#portfolio">View Our Work</a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#trustStrip" aria-label="Scroll to studio information"><span></span></a>
+  </section>
+
+  <section class="trust-strip" id="trustStrip" aria-label="Studio information">
+    <ul class="trust-list" id="trustList"></ul>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap two-col">
+      <div>
+        <p class="eyebrow dark">About the studio</p>
+        <h2>Calm, considered spaces with a sense of place.</h2>
+      </div>
+      <div>
+        <p>Explore the studio's work and get in touch to discuss your space.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="services">
+    <div class="wrap">
+      <p class="eyebrow dark">What we do</p>
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card"><h3>Residential spaces</h3><p>Discuss your home interior project with the studio.</p></article>
+        <article class="card"><h3>Kitchens &amp; storage</h3><p>Get in touch to discuss kitchen and storage requirements.</p></article>
+        <article class="card"><h3>Commercial spaces</h3><p>Contact the studio to discuss a commercial interior project.</p></article>
+        <article class="card"><h3>Project details</h3><p>Scope, services and availability can be confirmed directly with the studio.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <div class="wrap">
+      <p class="eyebrow dark">Selected work</p>
+      <h2>Portfolio</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="living">Living</button>
+        <button class="chip" data-filter="bedroom">Bedroom</button>
+        <button class="chip" data-filter="kitchen">Kitchen</button>
+        <button class="chip" data-filter="commercial">Commercial</button>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p id="projectEmpty">Project photos will be added when approved studio media is supplied.</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="case-study">
+    <div class="wrap two-col center">
+      <img id="caseImg" class="rounded" alt="" width="1200" height="630" loading="lazy">
+      <div>
+        <p class="eyebrow dark">Featured project</p>
+        <h2>Featured project</h2>
+        <p>Project information will be added after details are confirmed by the studio.</p>
+        <a class="btn" href="#contact">Contact the studio</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="wrap">
+      <p class="eyebrow dark">How we work</p>
+      <h2>Our process</h2>
+      <ol class="steps">
+        <li><h3>Discuss</h3><p>Share your project requirements with the studio.</p></li>
+        <li><h3>Plan</h3><p>Confirm project scope and next steps together.</p></li>
+        <li><h3>Design</h3><p>Discuss design details and approvals for your project.</p></li>
+        <li><h3>Deliver</h3><p>Project schedule and handover details are agreed directly.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="reels">
+    <div class="wrap">
+      <p class="eyebrow dark">On Instagram</p>
+      <h2>Reels &amp; walkthroughs</h2>
+      <div class="reels-marquee" id="reelMarquee" aria-label="Instagram posts">
+        <div class="reel-track" id="reelTrack">
+          <div class="reel-group" id="reelList"></div>
+        </div>
+      </div>
+      <p id="reelEmpty">Instagram videos will appear here when their links are added.</p>
+      <p><a class="btn btn-outline" id="igLink" href="#" target="_blank" rel="noopener">Watch videos on Instagram</a></p>
+    </div>
+  </section>
+
+  <section class="section alt" id="faq">
+    <div class="wrap narrow">
+      <h2>Frequently asked questions</h2>
+      <details><summary>How long does a project take?</summary><p>Project timing depends on the confirmed scope. Contact the studio to discuss your project.</p></details>
+      <details><summary>How can I discuss a quotation?</summary><p>Contact the studio with your requirements to discuss next steps.</p></details>
+      <details><summary>Can existing furniture be included?</summary><p>Share your requirements with the studio to confirm what can be included.</p></details>
+      <details><summary>Where does the studio work?</summary><p>Contact the studio to confirm service locations.</p></details>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap two-col">
+      <div>
+        <p class="eyebrow dark">Get in touch</p>
+        <h2>Let's plan your space.</h2>
+        <p>Use the contact details below to get in touch.</p>
+        <ul class="contact-list">
+          <li>Phone: <a id="cPhone" href="#"></a></li>
+          <li>Email: <a id="cMail" href="#"></a></li>
+          <li>Studio: <span id="cCity"></span></li>
+          <li id="directionsItem" hidden><a id="directionsLink" target="_blank" rel="noopener">Get directions</a></li>
+        </ul>
+      </div>
+      <form id="form" novalidate>
+        <label>Name<input name="name" id="contactName" required autocomplete="name" aria-describedby="nameError"><span class="field-error" id="nameError"></span></label>
+        <label>Phone<input name="phone" id="contactPhone" type="tel" required autocomplete="tel" inputmode="tel" aria-describedby="phoneError"><span class="field-error" id="phoneError"></span></label>
+        <label>Email<input name="email" id="contactEmail" type="email" autocomplete="email" aria-describedby="emailError"><span class="field-error" id="emailError"></span></label>
+        <label>Project type
+          <select name="type"><option>Home interiors</option><option>Kitchen / wardrobes</option><option>Commercial</option><option>Other</option></select>
+        </label>
+        <label>Message<textarea name="msg" id="contactMessage" rows="4" required aria-describedby="messageError"></textarea><span class="field-error" id="messageError"></span></label>
+        <p class="error" id="formMsg" role="alert"></p>
+        <div class="actions form-actions">
+          <button class="btn" type="submit">Send via WhatsApp</button>
+          <a class="btn btn-outline" id="emailFallback" href="mailto:[EMAIL]">Send by email</a>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> <span data-brand>Tatwamasi Studio</span>. All rights reserved.</p>
+  <p><a id="igFoot" href="#" target="_blank" rel="noopener">Instagram</a></p>
+</footer>
+
+<button id="toTop" class="to-top" aria-label="Back to top" hidden>&uarr;</button>
+
+<dialog id="lightbox" aria-label="Project image" aria-modal="true">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-prev" aria-label="Previous project">&larr;</button>
+  <button class="lb-next" aria-label="Next project">&rarr;</button>
+  <img alt="Selected project photo" width="1200" height="630">
+  <p></p>
+</dialog>
+
+<script src="data/media.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

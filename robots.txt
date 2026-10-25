@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: Replace SITE_URL with the published website origin.
+Sitemap: https://SITE_URL/sitemap.xml

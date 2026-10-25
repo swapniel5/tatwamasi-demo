@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- TODO: Replace SITE_URL with the published website origin. -->
+  <url>
+    <loc>https://SITE_URL/</loc>
+  </url>
+</urlset>
